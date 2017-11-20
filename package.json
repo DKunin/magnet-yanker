@@ -1,0 +1,29 @@
+{
+  "name": "magnet-yanker",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkunin/magnet-yanker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkunin/magnet-yanker/issues"
+  },
+  "scripts": {
+    "test": "echo test",
+    "start": "node ./",
+    "dev": "node ./",
+    "build": "NODE_ENV=production node ./"
+  },
+  "homepage": "https://github.com/dkunin/magnet-yanker",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "1.8.12",
+    "bunyan-syslog-udp": "0.1.0",
+    "convict": "4.0.1",
+    "express": "4.16.2",
+    "jsdom": "11.4.0"
+  }
+}

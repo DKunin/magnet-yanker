@@ -1,0 +1,17 @@
+version: "3"
+services:
+  magnet-yanker:
+    build: .
+    environment: 
+      - SYSLOG_HOST=syslog
+    depends_on:
+      - syslog
+    restart: always
+    ports:
+      - "3739:3739"
+  syslog:
+    build: ./syslog/
+    container_name: syslog
+    restart: always
+    ports:
+      - "514:514/udp"
